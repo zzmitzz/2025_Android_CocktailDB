@@ -18,11 +18,7 @@ class LoadingDialog : DialogFragment() {
     companion object {
         private const val ARG_MESSAGE = "message"
         
-        /**
-         * Create a new loading dialog
-         * @param message Optional message to display
-         * @return LoadingDialog instance
-         */
+
         fun create(message: String? = null): LoadingDialog {
             return LoadingDialog().apply {
                 arguments = Bundle().apply {
