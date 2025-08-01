@@ -10,12 +10,12 @@ plugins {
 
 android {
     namespace 'com.example.android_template'
-    compileSdk 33
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.android_template"
-        minSdk 24
-        targetSdk 33
+        minSdk 29
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -34,6 +34,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
     }
 }
 

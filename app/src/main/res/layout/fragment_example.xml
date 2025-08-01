@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MVP Fragment Example"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click refresh to load data"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:minHeight="100dp"
+        android:background="@drawable/bg_text_container" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout> 
