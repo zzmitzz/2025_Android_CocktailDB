@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 abstract class BaseActivity<P : BasePresenter<*>> :
     AppCompatActivity(),
     BaseView {
-    protected var presenter: P? = null
+    private var presenter: P? = null
     private var loadingDialog: LoadingDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,13 +64,13 @@ abstract class BaseActivity<P : BasePresenter<*>> :
 
     override fun isActive(): Boolean = !isFinishing && !isDestroyed
 
-    protected fun showToast(message: String) {
+    private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     protected fun getContext(): Context = this
 
-    protected fun navigateTo(
+    private fun navigateTo(
         activityClass: Class<*>,
         extras: Bundle? = null,
     ) {
